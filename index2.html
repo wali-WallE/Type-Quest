@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeQuest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="stars"></div>
+
+    <div class="start-screen">
+        <div class="container">
+            <h1 class="game-title">TYPEQUEST</h1>
+            <p class="press-start">PRESS ENTER TO START</p>
+
+            <div class="timer-options">
+                <label>Select Time:</label>
+                <button class="time-btn" data-time="15">15s</button>
+                <button class="time-btn" data-time="30">30s</button>
+                <button class="time-btn" data-time="60">60s</button>
+            </div>
+
+            <button class="start-btn"></button>
+        </div>
+    </div>
+
+    <div class="game-screen hidden">
+        <h2 class="level-title">LEVEL 1</h2>
+        <div class="stats">
+            <span class="score">Words: --</span>
+            <span class="timer">Time: 60s</span>
+        </div>
+        <div class="game-area"></div>
+        <input type="text" id="inputBox" autocomplete="off" autofocus />
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
