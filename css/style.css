@@ -39,3 +39,46 @@ body::before {
         background-position: 40px 40px;
     }
 }
+
+.stars {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+        radial-gradient(2px 2px at 80% 70%, #ffcc00, transparent),
+        radial-gradient(2px 2px at 50% 90%, #ff0080, transparent),
+        radial-gradient(2px 2px at 10% 60%, #4a00e0, transparent);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: twinkle 4s ease-in-out infinite alternate;
+    opacity: 0.7;
+    image-rendering: pixelated;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+img,
+canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.hidden {
+    display: none;
+}
+
+.start-screen {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+}
