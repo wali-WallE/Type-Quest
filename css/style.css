@@ -116,3 +116,44 @@ canvas {
     gap: 1.5rem;
     height: 100vh;
 }
+
+.game-title {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #ffcc00;
+    text-shadow:
+        2px 2px 0 #000,
+        4px 4px 0 #ff0080;
+}
+
+.start-btn {
+    width: 180px;
+    height: 60px;
+    background-image: url('../images/pixel-border1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    image-rendering: pixelated;
+    border: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+
+.start-btn:hover {
+    animation: pop 0.25s ease-out;
+    transform: translateY(-5px) scale(1.05);
+    filter: brightness(1.4) drop-shadow(0 0 8px #ff0080);
+}
+
+.start-btn:active {
+    transform: translateY(2px) scale(0.97);
+    filter: brightness(0.9);
+}
