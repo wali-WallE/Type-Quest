@@ -145,3 +145,14 @@ canvas {
     border: none;
     transition: transform 0.2s ease, filter 0.2s ease;
 }
+
+.start-btn:hover {
+    animation: pop 0.25s ease-out;
+    transform: translateY(-5px) scale(1.05);
+    filter: brightness(1.4) drop-shadow(0 0 8px #ff0080);
+}
+
+.start-btn:active {
+    transform: translateY(2px) scale(0.97);
+    filter: brightness(0.9);
+}
