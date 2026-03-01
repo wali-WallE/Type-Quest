@@ -156,3 +156,17 @@ canvas {
     transform: translateY(2px) scale(0.97);
     filter: brightness(0.9);
 }
+
+@keyframes pop {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-8px) scale(1.07);
+    }
+
+    100% {
+        transform: translateY(-5px) scale(1.05);
+    }
+}
