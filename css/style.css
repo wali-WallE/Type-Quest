@@ -170,3 +170,31 @@ canvas {
         transform: translateY(-5px) scale(1.05);
     }
 }
+
+.timer-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff0080;
+}
+
+.time-btn {
+    background: #000;
+    border: 2px solid #ffcc00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.time-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    filter: brightness(1.4) drop-shadow(0 0 6px #ff0080);
+}
