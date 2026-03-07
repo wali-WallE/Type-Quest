@@ -219,3 +219,20 @@ canvas {
     color: #fff;
     background-color: transparent;
 }
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000;
+    margin-top: 1rem;
+}
+
+.level-title {
+    font-size: 1rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff0080;
+}
