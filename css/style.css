@@ -236,3 +236,32 @@ canvas {
     color: #ffcc00;
     text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff0080;
 }
+
+.game-area {
+    flex-grow: 1;
+    /* takes up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@keyframes levelIntro {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+        text-shadow: 0 0 5px #ff0080;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+        text-shadow: 0 0 10px #ffcc00;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff0080;
+    }
+}
