@@ -265,3 +265,13 @@ canvas {
         text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff0080;
     }
 }
+
+.level-title {
+    animation: levelIntro 1.5s ease-out forwards;
+}
+
+.game-screen {
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+}
