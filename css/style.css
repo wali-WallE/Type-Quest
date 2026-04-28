@@ -321,3 +321,15 @@ canvas {
 .teleport-out {
     animation: teleport-out 1.2s ease-in-out forwards;
 }
+
+.stars {
+    z-index: 0;
+}
+
+.start-screen {
+    z-index: 10;
+}
+
+.game-screen {
+    z-index: 5;
+}
